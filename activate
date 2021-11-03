@@ -1,0 +1,8 @@
+ENV1="./.venv/"
+ENV2="./env/"
+if [ -d "$ENV1" ]; then
+  echo ".venv/ found" && source ./.venv/bin/activate
+elif [ -d "$ENV2" ]; then 
+  echo "env/ found" && source ./env/bin/activate
+fi
+
